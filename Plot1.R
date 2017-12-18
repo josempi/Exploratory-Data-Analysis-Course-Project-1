@@ -52,14 +52,6 @@ powerconsumption <-read.table("household_power_consumption.txt", header=TRUE, se
 powerdata <-rbind(powerconsumption[powerconsumption$Date=="1/2/2007",],powerconsumption[powerconsumption=="2/2/2007",])
 
 
-######################################
-##  FORMAT DATE AND TIME FIELDS     ##
-######################################
-
-## Format Date Field ##
-powerdata$Date <- as.Date(powerdata$Date,"%d/%m/%Y")
-
-
 ################################################
 ##  Run and Print the 1st Histogram Plot      ##
 ################################################
